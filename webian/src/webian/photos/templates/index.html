@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Webian Photos Prototype</title>
+  <script type="text/javascript" src="/photos/static/js/jquery.js"></script>
+  <script type="text/javascript" src="/photos/static/js/main.js"></script>
+  <link rel="stylesheet" href="/photos/static/css/main.css" type="text/css" />
+</head>
+<body>
+{% if photo_list %}
+  {% for photo in photo_list %}
+    <img class="photo" src="{{ photo.uri}}" width="200px" height="200px">
+  {% endfor %}
+{% else %}
+    <p>No photos are available.</p>
+{% endif %}
+
+</body>
+</html>

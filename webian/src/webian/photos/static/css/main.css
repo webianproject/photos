@@ -1,0 +1,8 @@
+body {
+	background-color: #000;
+}
+
+img.photo {
+	float: left;
+	margin: 10px;
+}
